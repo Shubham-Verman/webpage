@@ -1,0 +1,191 @@
+/* Header with Logo on Left and Navigation on Right */
+header {
+    display: flex;
+    justify-content: space-between;  /* Space between logo and nav */
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;  /* Initially white */
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;  /* Ensure padding doesn't affect width */
+}
+
+/* Logo Styling */
+header .logo {
+    flex-shrink: 0;  /* Prevent the logo from shrinking */
+}
+
+header .logo a {
+    font-size: 24px;
+    color: #2d3436;  /* Charcoal for text */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Navigation Bar Styling */
+header nav {
+    display: flex;
+    justify-content: flex-end;  /* Align the nav links to the right */
+    flex-grow: 1;  /* Allow the nav to take up remaining space */
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;  /* Add space between the nav links */
+}
+
+header nav ul li a {
+    color: #2d3436;  /* Charcoal text color */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Highlight link on hover */
+header nav ul li a:hover {
+    color: #e74c3c;  /* Coral */
+}
+
+/* When scrolled, navbar background changes */
+header.scrolled {
+    background-color: #1abc9c;  /* Dark Teal */
+}
+
+/* Active Link (if needed) */
+header nav ul li a.active {
+    color: #e74c3c;  /* Coral */
+}
+
+/* Content Sections */
+section {
+    padding: 40px 20px;
+    background-color: #f7f7f7;  /* Light Gray */
+    margin: 10px 0;
+}
+
+/* White Background for some sections */
+section.white-background {
+    background-color: #ffffff;  /* White */
+}
+
+/* Heading Styles */
+section h1, section h2 {
+    color: #2d3436;  /* Charcoal for headings */
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;  /* Elegant font */
+}
+
+section p {
+    color: #2d3436;  /* Charcoal text */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Buttons */
+button, .btn {
+    background-color: #e74c3c;  /* Coral */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #1abc9c;  /* Dark Teal on hover */
+}
+
+/* Footer Styling */
+
+footer {
+    background-color: #1abc9c;  /* Dark Teal */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 50px;
+}
+
+#quote-container {
+    margin-top: 10px;
+    font-size: 18px;
+    font-style: italic;  /* Make the quote italic */
+    
+}
+
+
+
+/* home page layout */
+
+/* Main container for the Home page layout */
+
+/* Home Container */
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px; /* Increased left and right padding for overall margin */
+    background-color: #ffffff; /* White background */
+    gap: 100px; /* Reduce the gap between the content and image */
+}
+
+/* Left section - Center alignment for the Greeting */
+.home-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    max-width: 50%;
+    text-align: center; /* Ensures text is centered */
+}
+
+
+/* Right Section - Image */
+.home-right {
+    display: flex; /* Ensures alignment inside the container */
+    justify-content: flex-start; /* Aligns the image closer to the left */
+    width: 50%; /* Keep the right container size consistent */
+}
+
+/* Right Section - Image */
+.home-right img {
+    margin-top: 18px;
+    max-width: 250px; /* Image size */
+    height: 250px; /* Make the height equal to width to form a circle */
+    width: 250px; /* Set fixed width */
+    border-radius: 50%; /* Round the image */
+    border: 5px solid #f39c12; /* Gold border */
+    object-fit: cover; /* Ensures image fills the circle without distortion */
+}
+
+
+
+
+/* Greeting (Namaste) */
+.home-left h1 {
+    font-family: 'Merriweather', serif; /* Font for the greeting */
+    font-size: 62px;
+    color: #2c3e50; /* Navy Blue */
+    margin-bottom: 18px;
+}
+
+/* Bio Text */
+.home-left p {
+    font-family: 'Roboto', sans-serif; /* Font for the bio text */
+    font-size: 18px;
+    color: #2d3436; /* Charcoal for body text */
+    line-height: 1.5;
+    margin-top: 15px; /* Adds some spacing below the title */
+}
