@@ -45,6 +45,7 @@
 - SEO ka pta krke google mein direct search se reach bda skte ( but is it really necesaary? idk)
 - google analytics se link krke check kr skte kitne views aa rhe hai ( but i guess isse tode hacking prone bhi ho skte)
 - apna custmosise domain le skte hai ( but paise lygya and hack hone se bchane ke liye dekhna pdyga)
+- 2 factor of github bhi kr do must hai
 
 
 ###RECALL:::
@@ -62,5 +63,5 @@
 - Academic , notes ke liye nhi bnaya hai abhi;
 - navigation bar ke liye bnaya tha pr problem de rha tha toh delete kr diya: toh yek trh se woh bhi nhi h bnya hai
 
-  
+webpage made private repositry will make public only when need to deploy my site online.
 Signing off: 18/01/2025
